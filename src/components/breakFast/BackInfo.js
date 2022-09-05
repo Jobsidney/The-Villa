@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../menu/Button'
 
+
 function BackInfo() {
   return (
     <div>
@@ -13,7 +14,7 @@ function BackInfo() {
                 <Button word={'Explore More'}/>
             </div>
             <div className="image">
-                <img src={'/public/images/food2.png'} alt="" width="900"/>
+                <img src={''} alt="" width="900"/>
             </div>
         </div>
     </div>
