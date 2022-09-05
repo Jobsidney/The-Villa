@@ -520,21 +520,3 @@ svg:hover, i:hover{
     color: #ed5625;
 }
 
-
-.containerTop {
-  background-image: url('../public/images/back6.jpg');
-  height: 100vh;
-  background-position: 50% 75%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* filter: blur(2px); */
-  position:sticky;
-  background-color: black;
-
-}
-.overlay{
-  height: 100%;
-  width: 100%;
-  background-color:  rgba(0, 0,0, 0.4);
-
-}

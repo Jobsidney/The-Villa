@@ -1,0 +1,40 @@
+
+.containerTop {
+    background-image: url('/public/images/back6.jpg');
+    height: 100vh;
+    background-position: 50% 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* filter: blur(2px); */
+    position:sticky;
+    background-color: black;
+  
+  }
+  .overlay{
+    height: 100%;
+    width: 100%;
+    background-color:  rgba(0, 0,0, 0.4);
+  
+  }
+  .shouting {
+    position: absolute;
+    top: 25%;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .hero {
+    font-size: 6rem;
+    font-weight: 600;
+    padding-left: 7rem;
+    color: #ed5625ff  ;
+  }
+  .subHero {
+    font-size: 1.5rem;
+    width: 70%;
+    margin-top: 2rem;
+  }
