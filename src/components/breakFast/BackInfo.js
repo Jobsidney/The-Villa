@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../menu/Button'
 
 function BackInfo() {
   return (
@@ -9,7 +10,7 @@ function BackInfo() {
                 <h1>The flavors of life are just a bite away</h1>
                 <p>We ought to be about something beyond moving chicken. We ought to be a piece of our client’s lives
                     and the networks in which we serve.</p>
-                <button>Explore</button>
+                <Button word={'Explore More'}/>
             </div>
             <div className="image">
                 <img src={'/public/images/food2.png'} alt="" width="900"/>

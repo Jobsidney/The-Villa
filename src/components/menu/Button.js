@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Button({word,classN}) {
+function Button({word,classN,link}) {
   return (
     <button type="button" className={classN}>
-        <a href="./assets/html/main_menu.html">{word}</a>
+        <a href={link}>{word}</a>
     </button>
     
   )

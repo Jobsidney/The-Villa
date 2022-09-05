@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../menu/Button'
 
 function Abouts() {
   return (
@@ -18,7 +19,7 @@ function Abouts() {
                     legendary culinary gastronomy with typical dishes with a creative and talented touch, delivering a
                     distinctly unique dining experience to fulfill our guest expectations
                 </p>
-                <button>Explore</button>
+                <Button word={'Explore More'}/>
             </div>
         </div>
     </div>

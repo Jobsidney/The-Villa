@@ -4,41 +4,31 @@ import Back1Svg from '../navBar/Back1Svg'
 function Footer() {
 
 
-
-    function UnorderList({title,words}) {
+const ul1=['Our History','Investor reltion','Careers']
+const ul2=['Give Feedback','Status','Privacy & Policy']
+function UnorderList({title,words}) {
+        const items=words.map(item=><li><a href="#foot">{item}</a></li>)
         return(
             <ul>
-                <li class="title"><a href="#foot">{title}</a></li>
-                
-
-        </ul>
-            
-        )
-
-    }
+                <li className="title"><a href="#foot">{title}</a></li>
+                {items}
+        </ul>)}
 
 
   return (
-    <div>
+
     <footer>
     <div className="footer">
         <div className="left">
             <label for="" className="logo"><a href="#foot">
                 <Back1Svg/>
-                    </a></label>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta, fugiat aut dolorem maiores
-                qui, dicta adipisci a ullam dolor voluptates labore asperiores.</p>
+                </a></label>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta, fugiat aut dolorem maiores
+                    qui, dicta adipisci a ullam dolor voluptates labore asperiores.</p>
         </div>
 
-        <UnorderList title={'hello'} words={['hey','there']}/>
-        
-
-        <ul>
-            <li className="title"><a href="#foot">Resources</a></li>
-            <li><a href="#foot">Give Feedback</a></li>
-            <li><a href="#foot">Status</a> </li>
-            <li><a href="#fot">Privacy & Policy</a></li>
-        </ul>
+        <UnorderList title={'About'} words={ul1}/>
+        <UnorderList title={'Resources'} words={ul2}/>
 
         <div className="socials">
             <h2>Get us on</h2>
@@ -63,7 +53,6 @@ function Footer() {
         </div>
     </div>
 </footer>
-    </div>
   )
 }
 
