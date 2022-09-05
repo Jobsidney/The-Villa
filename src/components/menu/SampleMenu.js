@@ -2,6 +2,38 @@ import React from 'react'
 import Button from './Button'
 
 function SampleMenu() {
+
+    const data=[
+        {
+            title: 'breakfast',
+            descr: "An excellent way to make any breakfast event memorable is to add a made-to-order breakfast station that incorporates fresh ingredients.",
+            image: "hh",
+            alternative: "Burger image"
+        },
+        {
+            title: 'Dessert',
+            descr: "Ordering an appetizer rather than an entree can be the answer to enjoying restaurant meals without busting your calorie budget.",
+            image: "hh",
+            alternative: "Dessert image"
+        },
+        {
+            title: 'Appetizers',
+            descr: "Ordering an appetizer rather than an entree can be the answer to enjoying restaurant meals without busting your calorie budget.",
+            image: "hh",
+            alternative: "Appetizer image"
+        }
+    ]
+    function MenuCard({title,descr,image,alternative}){
+        return(
+            <div className="container1">
+            <img src={image} alt={alternative}/>
+            <h4>{title}</h4>
+            <p>{descr}</p>
+                <Button word={'Expore More'}/>
+        </div>
+        )
+    }
+
   return (
     <div className="menu">
     <h1>
@@ -9,28 +41,9 @@ function SampleMenu() {
     </h1>
 
     <div className="container">
-        <div className="container1">
-            <img src="/src/images/burger.png" alt="Burger image"/>
-            <h4>Breakfast</h4>
-            <p>An excellent way to make any breakfast event memorable is to add a made-to-order breakfast station
-                that incorporates fresh ingredients. </p>
-                <Button word={'Expore More'}/>
-        </div>
-        <div className="container1">
-            <img src="/src/images/dessert.png" alt="Dessert image"/>
-            <h4>Desserts</h4>
-            <p>Ordering an appetizer rather than an entree can be the answer to enjoying restaurant meals without
-                busting your calorie budget. </p>
-                <Button word={'Expore More'}/>
-        </div>
-        <div className="container1">
-            <img src="/src/images/appetizer2.png" alt="Appetizer image"/>
-            <h4>Appetizers</h4>
-            <p>Ordering an appetizer rather than an entree can be the answer to enjoying restaurant meals without
-                busting your calorie budget.</p>
-                <Button word={'Expore More'}/>
-        </div>
-
+        {
+            data.map(item=><MenuCard title={item.title} descr={item.descr} image={item.image} alternative={item.alternative}/>)
+        }
     </div>
     <Button word={"Explore Menu"} classN={'btn'}/>
     <div className="empty"></div>

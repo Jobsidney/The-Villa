@@ -48,7 +48,6 @@ function UnorderList({title,words}) {
                 <a href="##"><i class="fa fa-instagram" style={"font-size:36px"}></i></a>
                <a href="##"> <i class="fa fa-whatsapp" style={"font-size:36px"}></i></a> */}
 
-
             </div>
         </div>
     </div>
