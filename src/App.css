@@ -72,7 +72,7 @@ button{
 }
 /* HOME SECTION */
 .hero{
-  background-image: url("../public/images/appetizer.png");
+  background-image: url("/src/images/bg.png");
   color: #FFFF;
   height: 70vh;
   width: 100%;
@@ -98,4 +98,65 @@ button{
 .content h1, .about h2{
   font-family: 'Cormorant Upright', sans-serif;
 
+}
+
+.content h1{
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+.content p{
+  margin-bottom: 30px;
+  font-size: 1.4rem;
+  font-weight: 200;
+  
+  
+}
+.content button{
+  background: #ed5625;
+  color: #FFFF;
+  padding: 10px;
+  width: 200px;
+  font-size: 1.5rem;
+ font-weight: 600;
+ border: none;
+ border-radius: 10px;
+ transition:0.5s ease;
+}
+
+.aboutSec .image, .heroSec .image{
+  width: 100%;
+  height: 100%;
+}
+
+.aboutSec .image img, .heroSec .image img{
+  width: 100%;
+  height: 100%;
+}
+.content button:hover{
+  background: transparent;
+  color: #ed5625ff;
+  border: 2px solid #ed5625ff;
+}
+
+/* ABOUT SECTION */
+.about{
+  width: 85%;
+  margin: auto;
+  margin-top: 100px;
+}
+.about h2{
+  text-align: center;
+  font-size: 4rem;
+
+
+}
+.aboutSec{
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.aboutSec .image>img{
+  max-width: 500px;
+  min-width: 200px;
 }
