@@ -21,7 +21,7 @@ function BackInfoCards() {
     function Card(title,descr){
         <div className="cardContent">
             <div className="image">
-                <img src='/src/images/discount.svg' alt="" width="120"/>
+                <img src='' alt="" width="120"/>
             </div>
             <div className="innerCont">
                 <h3>{title}</h3>
@@ -34,11 +34,12 @@ function BackInfoCards() {
 
   return (
     <div className="cards">
-        {
+        {/* {
             dataa.map(card =>
                 <Card title={card.title} descr={card.descr}/>
             )
-        }        
+        }  */}
+        <Card title="hello"/>       
     </div>
   )
 }

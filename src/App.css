@@ -160,3 +160,159 @@ button{
   max-width: 500px;
   min-width: 200px;
 }
+   
+.floats img {
+  position: absolute;
+  right: 2rem;
+  top: 102%;
+}
+/* .float{
+  position: absolute;
+  left: 2rem;
+  top: 170%;
+} */
+
+.float{
+  margin-top: 100px;
+}
+
+/* BRIEF ABOUT THE HOTEL */
+.cards{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.cardContent{
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+
+}
+.cardContent .image{
+  margin-right: 15px;
+  
+}
+
+
+/* MENU */
+.menu {
+  /* background-color: aquamarine; */
+  width: 85%;
+  margin: auto;
+  /* background: #fff; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+
+.menu h1 {
+  color: #000;
+  font-size: 4rem;
+  justify-content: center;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+.container{
+  margin-top: 100px;
+  height: 500px;
+}
+.container .container1 {
+  background: #2d2d31ff;
+  width: 350px;
+  /* border: 2px solid #ed5625ff; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ padding: 0 20px 30px 20px;
+}
+
+.container1 img {
+  height: 150px;
+  /* height: 250px; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.container1 h4{
+  font-size: 1.6rem;
+  font-weight: 700;
+  
+}
+.container1 p, h4{
+  color: #FFFF;
+  text-align: center;
+ 
+}
+.container1 p {
+  
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.container1 button {
+  padding: 0.8rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  background: #f3e874ff;
+  color: #000;
+  /* border: 2px solid #000; */
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.container1 button:hover {
+  
+  color: #f3e874ff;
+  background: transparent;
+  border: 2px solid #f3e874ff;
+}
+
+.btn {
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  padding-bottom: 3rem;
+  width: 200px;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.menu button.btn {
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  /* padding: 0.8rem 1rem; */
+  padding: 10px;
+  outline: none;
+  border-radius: 6px;
+  font-size: 1.5rem;
+  background: #ed5625ff;
+  color: #FFFF;
+  border: 2px solid #FFFF;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.menu button.btn:hover {
+  background: #FFFFFF;
+  color: #ed5625ff;
+  border: 2px solid #ed5625ff;
+}
+
+.menu .empty {
+  padding-top: 2rem;
+}
