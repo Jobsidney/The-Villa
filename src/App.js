@@ -3,8 +3,10 @@ import './App.css';
 import Abouts from './components/aboutsSection/Abouts';
 import BackInfoCards from './components/backInfoCards/BackInfoCards';
 import BackInfo from './components/breakFast/BackInfo';
+import Footer from './components/footer/Footer';
 import SampleMenu from './components/menu/SampleMenu';
 import NavBar from './components/navBar/navBar';
+import Reviews from './components/reviews/Reviews';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <BackInfoCards/>
       <Abouts/>
       <SampleMenu/>
+      <Reviews/>
+      <Footer/>
     </div>
   );
 }

@@ -316,3 +316,197 @@ button{
 .menu .empty {
   padding-top: 2rem;
 }
+* {box-sizing: border-box;}
+
+.mySlides {display: none;}
+
+
+
+/* CUSTOMER REVIEWS */
+.reviews{
+    width: 50%;
+    margin: auto;
+    height: 45vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.reviews h1{
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 40px;
+
+}
+.user p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.reviewCont span{
+    font-size: 1.7rem;
+    margin-top: 20px;
+    color: #ed5625;
+}
+.reviewCont span .checked{
+    color: #ed5625;
+}
+.reviewMain{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   align-items: center;
+}
+.column{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   margin-top: 50px;
+}
+.reviewCont p{
+    font-size: 1.4rem;
+}
+
+.arrow {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFF;
+    width: 50px;
+    height: 50px;
+    background: #ed5625;
+    border-radius: 50%;
+
+    font-size: 9rem;
+}
+.arrow i{
+    transition: 0.5s ease;
+    
+    font-size: 9rem;
+    background: transparent;
+    justify-content: center;
+    color: #fff;
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    /* width: 50px;
+    height: 50px; */
+    /* top: 50%; */
+    cursor: pointer;
+
+}
+.arrow:hover{
+     background: #FFFF;
+     color: #ed5625;
+     border: 1px solid #ed5625;
+    
+}
+
+.arrow i:hover{
+    color: #ed5625;
+   
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+  
+
+/* FOOTER SECTION */
+
+footer{
+    width: 85%;
+    margin: auto;
+    /* background-color: black; */
+    background-image: url('./images/bg.png');
+    color: #FFFF;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    height: 40vh;
+}
+.footer{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5rem;
+    
+}
+.fa-twitter{
+  font-size: 36px;
+}
+.left{
+    /* background-color: aqua; */
+    width: 30%;  
+}
+.left p{
+    margin-top: 2rem;
+}
+.footer>ul{
+    /* background-color: red; */
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer>ul>.title{
+    font-weight: 900;
+}
+.footer>ul>li:hover{
+    color: #ed5625;
+}
+
+.dow{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.socials>p{
+    font-weight: 900;
+}
+.media{
+    display: flex;
+    justify-content: space-around;
+}
+svg,i{
+    transition: 0.5s ease;
+}
+svg:hover, i:hover{
+    color: #ed5625;
+}
