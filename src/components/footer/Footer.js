@@ -1,22 +1,37 @@
 import React from 'react'
+import Back1Svg from '../navBar/Back1Svg'
 
 function Footer() {
+
+
+
+    function UnorderList({title,words}) {
+        return(
+            <ul>
+                <li class="title"><a href="#foot">{title}</a></li>
+                
+
+        </ul>
+            
+        )
+
+    }
+
+
   return (
     <div>
     <footer>
     <div className="footer">
         <div className="left">
-            <label for="" className="logo"><a href="#foot">Villa</a></label>
+            <label for="" className="logo"><a href="#foot">
+                <Back1Svg/>
+                    </a></label>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam soluta, fugiat aut dolorem maiores
                 qui, dicta adipisci a ullam dolor voluptates labore asperiores.</p>
         </div>
 
-        <ul>
-            <li class="title"><a href="#foot">About</a></li>
-            <li><a href="#foot">Our History</a></li>
-            <li><a href="#foot">Investor reltion</a></li>
-            <li><a href="#foot">Careers</a></li>
-        </ul>
+        <UnorderList title={'hello'} words={['hey','there']}/>
+        
 
         <ul>
             <li className="title"><a href="#foot">Resources</a></li>

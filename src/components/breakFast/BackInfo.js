@@ -12,7 +12,7 @@ function BackInfo() {
                 <button>Explore</button>
             </div>
             <div className="image">
-                <img src="/public/images/supa-removebg-preview.png" alt="" width="900"/>
+                <img src={'/public/images/food2.png'} alt="" width="900"/>
             </div>
         </div>
     </div>

@@ -72,7 +72,7 @@ button{
 }
 /* HOME SECTION */
 .hero{
-  background-image: url("/src/images/bg.png");
+  background-image: url("../public/images/bg.png");
   color: #FFFF;
   height: 70vh;
   width: 100%;
@@ -448,7 +448,7 @@ footer{
     width: 85%;
     margin: auto;
     /* background-color: black; */
-    background-image: url('./images/bg.png');
+    background-image: url('../public/images/bg.png');
     color: #FFFF;
     font-size: 1.5rem;
     margin-top: 50px;
