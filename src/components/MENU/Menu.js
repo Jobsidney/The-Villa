@@ -1,6 +1,7 @@
 import React from 'react'
 import Button from '../menu/Button'
 import QuickDrinks from './cocktails/QuickDrinks'
+import Lunch from './Lunch/Lunch'
 import menu from './menu.css'
 function Menu() {
  
@@ -26,7 +27,8 @@ function Menu() {
         </div>
     </div>
 </div>
-<QuickDrinks/>
+{/* <QuickDrinks/> */}
+<Lunch/>
 </div>
   )
 }
