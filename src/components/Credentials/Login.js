@@ -1,6 +1,7 @@
 import React from 'react'
 
 function Login() {
+    
   return (
     <form id='log'>
         <h2 className="heading">Villa</h2>
