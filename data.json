@@ -1,14 +1,22 @@
 {
-    "users": [
-        {
-            "email":"jobsidney@gmail.com",
-            "password": "2qwerty56"
-
-        },
-        {
-            "email":"jobsidi@gmail.com",
-            "password": "2qwtyrddddd5"
-
-        }
-    ] 
+  "users": [
+    {
+      "id": 1,
+      "email": "jobsidney@gmail.com",
+      "password": "2qwerty56",
+      "password-confirm": "23234"
+    },
+    {
+      "id": 2,
+      "email": "jobsidi@gmail.com",
+      "password": "2qwtyrddddd5",
+      "password-confirm": "23234"
+    },
+    {
+      "email": "jobsidi@outlook.com",
+      "password": "n",
+      "password-confirm": "gc",
+      "id": 3
+    }
+  ]
 }
