@@ -18,7 +18,7 @@
   }
   .shouting {
     position: absolute;
-    top: 25%;
+    top: 60%;
     color: white;
     text-align: center;
     display: flex;
@@ -27,7 +27,7 @@
     justify-content: center;
     width: 100%;
   }
-  .hero {
+  .hero2 {
     font-size: 6rem;
     font-weight: 600;
     padding-left: 7rem;
@@ -38,3 +38,24 @@
     width: 70%;
     margin-top: 2rem;
   }
+  footer{
+    width: 100%;
+    margin: auto;
+   background-image: none;
+   background-color: black;
+    font-size: 1.5rem;
+    margin-top: 1px;
+    
+}
+.footer{
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5rem;
+    padding-bottom: 15rem;
+    
+    
+}

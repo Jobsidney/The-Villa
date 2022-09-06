@@ -1,7 +1,7 @@
 import React from 'react'
 import Back1Svg from '../navBar/Back1Svg'
 
-function Footer() {
+function Footer({footer}) {
 
 
 const ul1=['Our History','Investor reltion','Careers']

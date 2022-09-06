@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Inter:wght@200;300;400;500&family=Oleo+Script&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+.main-menu {
+    font-family: 'Cormorant Upright', serif;
+    background-image: url('/public/images/bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    height: auto;
+    top: 0;
+    margin-top: 0;
+    /* overflow: hidden; */
+    color: #fff;
+    
+}
+.main-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-links>h4 {
+    font-size: 2rem;
+
+}
+
+.main-links>h1 {
+    font-size: 5rem;
+    color: #f3e874ff;
+  
+    letter-spacing: 0.04em;
+}
+
+.main-links .links {
+    display: flex;
+    align-items: center;
+}
+
+.links ul {
+    display: inline;
+    justify-content: space-between;
+}
+.links ul li {
+    display: inline;
+    justify-content: space-between;
+    font-size: 1.9rem;
+    margin-left: 2.6rem;
+    list-style: none;
+}
+
+.links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.links ul li a.home {
+    border: 1px solid #f3e874ff;
+    padding: 0.1rem 1rem;
+    border-radius: 6px;
+    transition: 0.5s ease;
+}
+
+.links ul li a.home:hover {
+    color: #000;
+    background: #f3e874ff;
+}
+
+.links ul li a:hover {
+    color: #f3e874ff;
+}
+
+.links ul li a.active {
+    color: #f3e874ff;
+    transition: 0.5s ease;
+}
+
+.links ul li a.active:hover {
+    border-bottom: 1px solid #f3e874ff;
+}
+.button button a {
+    color: #000;
+    text-decoration: none;
+}
+
+.button button a:hover {
+    color: #f3e874ff;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0;
+    margin: auto;
+    margin-top: 4rem;
+    gap: 3rem;
+}
+
+.content>.wines {
+    background-image: url(/public//images/wine.png);
+    width: 300px;
+    height: 500px;
+}
+
+.wines h2 {
+    font-size: 2.7rem;
+    /* border-bottom: 1px solid #f3e874ff; */
+    padding-bottom: 0;
+    line-height: 0;
+}
+.wines p {
+    font-size: 1.5rem;
+    line-height: 60px;
+}
+
+.cocktails h2 {
+    font-size: 2.7rem;
+    /* border-bottom: 1px solid #f3e874ff; */
+    padding-bottom: 0;
+    line-height: 0;
+}
+.cocktails p {
+    font-size: 1.5rem;
+    line-height: 60px;
+}
+
+
+.button {
+    justify-content: center;
+    text-align: center;
+    margin-left: 4rem;
+    align-items: center;
+}
+
+.button button {
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    color: #000;
+    background: #f3e874ff;
+    font-family: 'Cormorant Upright', serif;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.button button:hover {
+    border: 2px solid #f3e874ff;
+    background: transparent;
+    color: #f3e874ff;
+}

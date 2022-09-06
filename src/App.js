@@ -4,6 +4,7 @@ import Abouts from './components/aboutsSection/Abouts';
 import BackInfoCards from './components/backInfoCards/BackInfoCards';
 import BackInfo from './components/breakFast/BackInfo';
 import Footer from './components/footer/Footer';
+import Menu from './components/MENU/Menu';
 import SampleMenu from './components/menu/SampleMenu';
 import NavBar from './components/navBar/navBar';
 import Reservation from './components/RESERVATIONS/Reservation';
@@ -19,7 +20,8 @@ function App() {
       <SampleMenu/>
       <Reviews/>
       <Footer/> */}
-      <Reservation/>
+      {/* <Reservation/> */}
+      <Menu/>
     </div>
   );
 }
