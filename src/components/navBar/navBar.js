@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../menu/Button'
+import Button from '../SampleMenu/Button'
 import Back1Svg from './Back1Svg'
 
 function NavBar({classN}) {

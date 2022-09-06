@@ -1,5 +1,5 @@
 import React from 'react'
-import Button from '../menu/Button'
+import Button from '../SampleMenu/Button'
 import BreakFast from './Breakfast/BreakFast'
 import QuickDrinks from './cocktails/QuickDrinks'
 import Dessert from './Desserts/Dessert'

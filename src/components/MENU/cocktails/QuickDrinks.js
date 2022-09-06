@@ -65,7 +65,7 @@ function QuickDrinks() {
 
 
   return (
-    <div className="content">
+    <div className="content2">
     <div className="wines">
         <h2>Wines</h2>
         <p id='text'>

@@ -1,5 +1,6 @@
 import React from 'react'
-import Button from '../menu/Button'
+import Button from '../SampleMenu/Button'
+
 
 function Abouts() {
   return (
@@ -10,7 +11,7 @@ function Abouts() {
         </div>
         <div className="aboutSec">
             <div className="image">
-                <img src={"/src/images/food2.png"} alt="" width="500"/>
+                <img src={"../../images/food2.png"} alt="" width="500"/>
             </div>
             <div className="content">
                 <p>
@@ -19,7 +20,8 @@ function Abouts() {
                     legendary culinary gastronomy with typical dishes with a creative and talented touch, delivering a
                     distinctly unique dining experience to fulfill our guest expectations
                 </p>
-                <Button word={'Explore More'}/>
+                {/* <Button/> */}
+                <Button  word={'Explore More'}/>
             </div>
         </div>
     </div>

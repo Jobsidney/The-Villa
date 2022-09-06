@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from '../footer/Footer'
-import Button from '../menu/Button'
+import Button from '../SampleMenu/Button'
 import NavBar from '../navBar/navBar'
 import reservation from './reserve.css'
 

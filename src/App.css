@@ -98,6 +98,8 @@ button{
 }
 
 .content{
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 800px;
   min-width: 500px;
