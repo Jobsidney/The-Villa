@@ -6,7 +6,7 @@
     background-image: url('/public/images/bg.png');
     background-position: center;
     background-size: cover;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     height: auto;
     top: 0;
     margin-top: 0;
@@ -98,38 +98,35 @@
     margin-bottom: 0;
     margin: auto;
     margin-top: 4rem;
-    gap: 3rem;
+    gap: 1rem;
 }
 
-.content>.wines {
+.content>.img {
     background-image: url(/public//images/wine.png);
     width: 300px;
+    min-width: 300px;
     height: 500px;
+    position: sticky;
+    background-position: 50% ;
+}
+.wines{
+   
+    width: 100%;
+
 }
 
-.wines h2 {
+.wines>h2{
     font-size: 2.7rem;
-    /* border-bottom: 1px solid #f3e874ff; */
     padding-bottom: 0;
-    line-height: 0;
+    text-decoration: underline;
 }
-.wines p {
+.wines p{
     font-size: 1.5rem;
-    line-height: 60px;
 }
-
-.cocktails h2 {
-    font-size: 2.7rem;
-    /* border-bottom: 1px solid #f3e874ff; */
-    padding-bottom: 0;
-    line-height: 0;
+.obj{
+    border-bottom: 1px solid white;
+    margin-top: 1rem;
 }
-.cocktails p {
-    font-size: 1.5rem;
-    line-height: 60px;
-}
-
-
 .button {
     justify-content: center;
     text-align: center;
