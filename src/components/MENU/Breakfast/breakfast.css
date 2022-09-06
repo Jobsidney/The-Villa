@@ -1,0 +1,59 @@
+
+.main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.head-text {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.head-text h1 {
+    font-size: 2.7rem;
+    color: #f3e874ff;
+}
+
+.head-text small {
+    font-size: 1.5rem;
+}
+.main-dinner {
+    display: grid;
+    grid-template-columns:610px 610px;
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    gap: 5rem 4rem ;
+    justify-content: center;
+}
+
+.main-dinner>.dinner1 {
+    display: flex;
+    flex-direction: row;
+    width: 600px;
+    border: 0.5px solid #f3e874ff;
+    border-bottom: 1px solid transparent;
+    border-radius: 13px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+} 
+
+.text h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.text p {
+    color: #f3e874ff;
+    font-size: 1rem;
+}
+
+.dinner1 img {
+    width: 200px;
+    height: 200px;
+    margin-left: 1rem;
+}
