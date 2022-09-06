@@ -14,7 +14,7 @@ function BackInfo() {
                 <Button word={'Explore More'}/>
             </div>
             <div className="image">
-                <img src={''} alt="" width="900"/>
+                <img src={"../../images/supa-removebg-preview.png"} alt="" width="900"/>
             </div>
         </div>
     </div>

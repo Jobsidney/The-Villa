@@ -4,7 +4,7 @@ import Button from '../SampleMenu/Button'
 
 function Abouts() {
   return (
-    <div>
+    <div className="about">
         <h2>About Us</h2>
         <div className="floats">
             <img src="./assets/images/Rectangle 6.png" alt="" srcset="" width="150"/>

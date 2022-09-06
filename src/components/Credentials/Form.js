@@ -4,12 +4,9 @@ import login from './login.css'
 import SignUp from './SignUp'
 function Form() {
   return (
-    <div className="image">
+    <div className="image2">
         <div className='overlay'>
           <div className="all">
-
-          {/* <SignUp/> */}
-          <Login/>
 
           </div>
          </div>

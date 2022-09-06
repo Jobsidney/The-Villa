@@ -5,11 +5,11 @@ function Login() {
 const [users,setUser]=useState('');
 const [formData,setData] = useState({})
 
-useEffect(()=>{
-fetch("http://localhost:3000/users")
-.then(res=>res.json())
-.then(data=>setUser(data));
-},[])
+// useEffect(()=>{
+// fetch("http://localhost:3000/users")
+// .then(res=>res.json())
+// .then(data=>setUser(data));
+// },[])
 console.log(users);
 
   function handleChange(event) {
@@ -19,6 +19,7 @@ console.log(users);
       ...formData,
       [name]: value,
     })
+    console.log(formData);
 
   }
 

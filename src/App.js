@@ -9,21 +9,20 @@ import SampleMenu from './components/SampleMenu/SampleMenu';
 import NavBar from './components/navBar/navBar';
 import Reservation from './components/RESERVATIONS/Reservation';
 import Reviews from './components/reviews/Reviews';
+import app from './App.css'
 import LoginForm from './components/Credentials/Form';
 
 function App() {
   return (
     <div className="App">
-      {/* <NavBar/>
+      <NavBar/>
       <BackInfo/>
       <BackInfoCards/>
       <Abouts/>
       <SampleMenu/>
       <Reviews/>
-      <Footer/> */}
-      {/* <Reservation/> */}
-      {/* <Menu/> */}
-      <LoginForm/>
+      <Footer/>
+
     </div>
   );
 }
