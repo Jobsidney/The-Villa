@@ -11,19 +11,31 @@ import Reservation from './components/RESERVATIONS/Reservation';
 import Reviews from './components/reviews/Reviews';
 import app from './App.css'
 import LoginForm from './components/Credentials/Form';
+import {Route, Routes,Link} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <NavBar/>
-      <BackInfo/>
-      <BackInfoCards/>
-      <Abouts/>
-      <SampleMenu/>
-      <Reviews/>
-      <Footer/>
+      <div className="App">
+        <NavBar/>
+        <Routes>
+          <Route path="/" element={<BackInfo/>}/>
+          <Route path="/home/about" element={<Abouts/>}/>
+        </Routes>
 
-    </div>
+
+
+
+          {/* <NavBar/>
+          <BackInfo/>
+          <BackInfoCards/>
+          <Abouts/>
+          <SampleMenu/>
+          <Reviews/>
+          <Footer/> */}
+
+          </div>
+
   );
 }
 
