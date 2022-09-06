@@ -8,7 +8,8 @@ function Form() {
         <div className='overlay'>
           <div className="all">
 
-          <SignUp/>
+          {/* <SignUp/> */}
+          <Login/>
 
           </div>
          </div>
