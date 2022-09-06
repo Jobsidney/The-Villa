@@ -9,7 +9,7 @@ import SampleMenu from './components/SampleMenu/SampleMenu';
 import NavBar from './components/navBar/navBar';
 import Reservation from './components/RESERVATIONS/Reservation';
 import Reviews from './components/reviews/Reviews';
-import LoginForm from './components/Logins/LoginForm';
+import LoginForm from './components/Credentials/Form';
 
 function App() {
   return (
