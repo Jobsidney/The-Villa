@@ -1,0 +1,45 @@
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background: rgba(241, 233, 153, 0.2);
+    padding-left: 2rem;
+    padding-bottom: 3rem;
+}
+
+.main-text h1 {
+    color: #f3e874ff;
+    justify-content: center;
+    font-size: 3rem;
+    align-items: center;
+    text-align: center;
+}
+
+.text1 h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text1 h3 span {
+    float: right;
+    margin-right: 4rem;
+    color: #f3e874ff;
+    font-weight: bold;
+}
+
+.text1 p {
+    font-size: 1.2rem;
+}
+.image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
