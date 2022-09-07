@@ -88,8 +88,8 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 0;
-    margin: auto;
-    margin-top: 4rem;
+    margin: 3rem;
+    margin-top: 2rem;
     gap: 1rem;
 }
 
@@ -102,7 +102,6 @@
     background-position: 50% ;
 }
 .wines{
-   
     width: 100%;
 
 }
