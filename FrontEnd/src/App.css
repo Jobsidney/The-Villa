@@ -40,7 +40,7 @@ label{
   font-size: 2rem;
   font-weight: 800;
 }
-nav>button{
+nav>a button{
   background-color: #ed5625;
   color: white;
   padding: 10px;

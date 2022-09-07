@@ -3,13 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter,Route,Router, Routes } from "react-router-dom";
+import Reservation from './components/RESERVATIONS/Reservation';
+import Menu from './components/MENU/Menu';
+import Form from './components/Credentials/Form';
+import BreakFast from './components/MENU/Breakfast/BreakFast';
+import Dessert from './components/MENU/Desserts/Dessert';
+import Lunch from './components/MENU/Lunch/Lunch';
+import QuickDrinks from './components/MENU/cocktails/QuickDrinks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
   <BrowserRouter>
-  <App />
+  <Routes>
+    <Route path="/" element={<App/>} />
+    <Route path="/reservations" element={<Reservation/>}/>
+    <Route path="/menu" element={<Menu/>}>
+
+    </Route>
+  </Routes>
   </BrowserRouter>
   </React.StrictMode>
 );

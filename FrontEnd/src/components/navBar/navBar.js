@@ -1,20 +1,21 @@
 import React from 'react'
 import Button from '../SampleMenu/Button'
 import Back1Svg from './Back1Svg'
-import {Link} from 'react-router-dom'
+import {Link } from 'react-router-dom'
+import { HashLink as NavLink } from 'react-router-hash-link';
 function NavBar({classN}) {
   return (
       <nav>
-        <label  class="logo">
+        <label  className="logo">
           <Back1Svg/>
         </label>
-        <ul class="nav-link" className={classN}>
+        <ul class={classN} >
             <li ><Link to="/">Home</Link></li>
-            <li ><Link to="/home/about">About</Link></li>
-            <li ><Link to="/home/menu">Menu</Link></li>
+            <li ><a to="#about">About</a></li>
+            <li ><a to="#menu">Menu</a></li>
             <li ><Link to="/reservations">Reservations</Link></li>
         </ul>
-        <Button classN={"login"} word={"Log In"} link={''}/>
+        <a  to="/login"><Link to="/login"><Button  word={"Log In"} ></Button></Link></a>
     </nav>
   )
 }

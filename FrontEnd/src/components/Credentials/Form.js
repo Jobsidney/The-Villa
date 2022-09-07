@@ -7,6 +7,7 @@ function Form() {
     <div className="image2">
         <div className='overlay'>
           <div className="all">
+            <Login/>
 
           </div>
          </div>

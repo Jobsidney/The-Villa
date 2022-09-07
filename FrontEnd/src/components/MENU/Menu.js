@@ -5,6 +5,8 @@ import QuickDrinks from './cocktails/QuickDrinks'
 import Dessert from './Desserts/Dessert'
 import Lunch from './Lunch/Lunch'
 import menu from './menu.css'
+import { BrowserRouter,Route,Routes,Link,Outlet} from "react-router-dom";
+
 function Menu() {
  
 
@@ -17,21 +19,19 @@ function Menu() {
     <h1>Today's Special</h1>
     <div class="links">
         <ul>
-            <li><a href="../../index.html" className="home">Home</a></li>
-            <li><a href="/" className="active">Quick</a></li>
-            <li><a href="../components/breakfast/breakfast.html">Breakfast</a></li>
-            <li><a href="../components/lunch/lunch.html">Lunch/ Dinner</a></li>
-            <li><a href="../components/dessert/dessert.html">Dessert</a></li>
+            <li><Link to="/" className="home">Home</Link></li>
+            <li><Link to="quickDrinks/" className="">Quick</Link></li>
+            <li><Link to="breakfast">Breakfast</Link></li>
+            <li><Link to="lunchDinner">Lunch/ Dinner</Link></li>
+            <li><Link to="desserts">Dessert</Link></li>
         </ul>
         <div className="button">
             <Button word={'Book a dish'}/>
         </div>
     </div>
 </div>
-{/* <QuickDrinks/> */}
-{/* <Lunch/> */}
-{/* <Dessert/> */}
-<BreakFast/>
+<Outlet></Outlet>     
+
 </div>
   )
 }
