@@ -10,12 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_09_07_144034) do
+ActiveRecord::Schema.define(version: 2022_09_07_154452) do
+
+  create_table "food_Category", force: :cascade do |t|
+    t.string "Category"
+  end
 
   create_table "foods", force: :cascade do |t|
     t.string "meal_name"
     t.string "description"
-    t.string "food_type"
+    t.integer "food_type"
     t.string "price"
     t.string "image"
   end
