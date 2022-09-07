@@ -11,6 +11,8 @@ import BreakFast from './components/MENU/Breakfast/BreakFast';
 import Dessert from './components/MENU/Desserts/Dessert';
 import Lunch from './components/MENU/Lunch/Lunch';
 import QuickDrinks from './components/MENU/cocktails/QuickDrinks';
+import Login from './components/Credentials/Login';
+import SignUp from './components/Credentials/SignUp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,7 +27,8 @@ root.render(
           <Route path="lunchDinner" element={<Lunch/>}/>
           <Route path="quickDrinks" element={<QuickDrinks/>}/>
     </Route>
-    <Route path='/login' element={<Form/>}/>
+    <Route path='/login' element={<Form data={<Login/>}/>}/>
+    <Route path='/signUp' element={<Form data={<SignUp/>}/>}/>
   </Routes>
   </BrowserRouter>
   </React.StrictMode>

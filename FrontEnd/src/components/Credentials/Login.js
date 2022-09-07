@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-
+import { Link } from 'react-router-dom'
 function Login() {
 
 const [users,setUser]=useState('');
@@ -48,7 +48,7 @@ function handleSubmit(event){
             <div className="hor"><hr/>
             </div>
         </div>
-        <h3 id="account">Don't have an account? <a href ="" id="sign">Sign up</a></h3>
+        <h3 id="account">Don't have an account? <Link to="/signUp" id="sign">Sign up</Link></h3>
     </form>
   )
 }

@@ -2,12 +2,12 @@ import React from 'react'
 import Login from './Login'
 import login from './login.css'
 import SignUp from './SignUp'
-function Form() {
+function Form({data}) {
   return (
     <div className="image2">
         <div className='overlay'>
           <div className="all">
-            <Login/>
+          {data}
 
           </div>
          </div>
