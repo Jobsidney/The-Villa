@@ -12,8 +12,8 @@
 
 ActiveRecord::Schema.define(version: 2022_09_07_154452) do
 
-  create_table "food_Category", force: :cascade do |t|
-    t.string "Category"
+  create_table "food_categories", force: :cascade do |t|
+    t.string "category"
   end
 
   create_table "foods", force: :cascade do |t|
