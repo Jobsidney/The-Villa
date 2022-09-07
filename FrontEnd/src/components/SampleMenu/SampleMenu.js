@@ -8,14 +8,14 @@ function SampleMenu() {
         {
             title: 'breakfast',
             descr: "An excellent way to make any breakfast event memorable is to add a made-to-order breakfast station that incorporates fresh ingredients.",
-            image: "../../images/food2.png",
+            image: "../../images/burger.png",
             alternative: "Burger image",
             link: "/menu"
         },
         {
             title: 'Dessert',
             descr: "Ordering an appetizer rather than an entree can be the answer to enjoying restaurant meals without busting your calorie budget.",
-            image: "../../images/food2.png",
+            image: "../../images/dessert.png",
             alternative: "Dessert image",
             link: "/menu"
         },
@@ -49,8 +49,8 @@ function SampleMenu() {
             data.map(item=><Link to={item.link}><MenuCard title={item.title} descr={item.descr} image={item.image} alternative={item.alternative} link={item.link}/></Link>)
         }
     </div>
-    <Button word={"Explore Menu"} classN={'btn'}/>
-    <div className="empty"></div>
+    {/* <Link to='menu'><Button word={"Explore Menu"} classN={'btn'} link='/menu'/></Link> */}
+    <div className="empty" ></div>
     </div>
 
   )

@@ -301,6 +301,9 @@ button{
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
+.btn{
+  margin-left:40%;
+ }
 
 .menu button.btn {
   justify-content: center;

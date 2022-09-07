@@ -20,7 +20,7 @@ function Menu() {
     <div class="links">
         <ul>
             <li><Link to="/" className="home">Home</Link></li>
-            <li><Link to="quickDrinks/" className="">Quick</Link></li>
+            <li><Link to="quickDrinks" className="">Quick</Link></li>
             <li><Link to="breakfast">Breakfast</Link></li>
             <li><Link to="lunchDinner">Lunch/ Dinner</Link></li>
             <li><Link to="desserts">Dessert</Link></li>

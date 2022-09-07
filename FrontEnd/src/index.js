@@ -23,8 +23,9 @@ root.render(
           <Route path="desserts" element={<Dessert/>}/>
           <Route path="breakfast" element={<BreakFast/>}/>
           <Route path="lunchDinner" element={<Lunch/>}/>
-          <Route path="quickDrinks/" element={<QuickDrinks/>}/>
+          <Route path="quickDrinks" element={<QuickDrinks/>}/>
     </Route>
+    <Route path='/login' element={<Form/>}/>
   </Routes>
   </BrowserRouter>
   </React.StrictMode>
