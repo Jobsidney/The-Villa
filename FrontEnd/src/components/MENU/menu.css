@@ -93,7 +93,7 @@
     gap: 1rem;
 }
 
-.content>.img {
+.img {
     background-image: url(/public//images/wine.png);
     width: 300px;
     min-width: 300px;
