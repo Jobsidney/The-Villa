@@ -1,4 +1,4 @@
-class CreateMeal < ActiveRecord::Migration[6.1]
+class Foods < ActiveRecord::Migration[6.1]
   def change
     create_table :foods do |t|
       t.string :meal_name

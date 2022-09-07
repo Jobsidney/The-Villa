@@ -5,7 +5,7 @@ class Users < ActiveRecord::Migration[6.1]
       t.string :email
       t.string :password
       t.string :password_Confirming
-
+      t.timestamps
     end
   end
 end
