@@ -32,9 +32,6 @@ function handleSubmit(event){
     }else{
       alert('Login Failure! Wrong email or password!')
     };
-
-
-
 }
 
   return (

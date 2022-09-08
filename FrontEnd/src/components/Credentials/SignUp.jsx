@@ -46,7 +46,7 @@ console.log(data);
         <input type="email" name="email" id="usermail-field" className="login-button" placeholder="Email" onChange={handleChange} required></input> 
         <input type="password" name="password" id="password-field" className="login-button" placeholder="Set Password" onChange={handleChange} required></input> 
         <input type="password" name="password_Confirming" id="password-field2" className="login-button" placeholder="Confirm Password" onChange={handleChange} required></input> 
-        <button type='submit' className='log' id='logIn'>Login</button>
+        <button type='submit' className='log' id='logIn'>Sign Up</button>
     </form>
   )
 }
