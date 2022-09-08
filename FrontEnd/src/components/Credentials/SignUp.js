@@ -16,22 +16,24 @@ const [formData,setData] = useState({})
     event.preventDefault();
     console.log(formData);
 
-    fetch("http://localhost:3000/users", {
+    fetch("http://localhost:9292/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
     })
+    event.target.reset()
   }
 
 
   return (
     <form action="" onSubmit={handleSubmit}>
-        <h2 className="heading">Villa</h2>         
-        <input type="email" name="email" id="username-field" className="login-button" placeholder="Email" onChange={handleChange}></input>
+        <h2 className="heading">Villa</h2> 
+        <input type="text" name="full_Name" id="username-field" className="login-button" placeholder="Full_Name" onChange={handleChange}></input>        
+        <input type="email" name="email" id="usermail-field" className="login-button" placeholder="Email" onChange={handleChange}></input>
         <input type="password" name="password" id="password-field" className="login-button" placeholder="Set Password" onChange={handleChange}></input>
-        <input type="password" name="password-confirm" id="password-field" className="login-button" placeholder="Confirm Password" onChange={handleChange}></input>
+        <input type="password" name="password_Confirming" id="password-field" className="login-button" placeholder="Confirm Password" onChange={handleChange}></input>
         <button type='submit' className='log' id='logIn'>Login</button>
     </form>
   )
