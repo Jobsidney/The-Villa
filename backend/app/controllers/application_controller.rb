@@ -19,6 +19,7 @@ class ApplicationController < Sinatra::Base
   get "/foods" do
       Food.all.to_json
   end
+  
 
 
 
@@ -29,11 +30,12 @@ class ApplicationController < Sinatra::Base
 
   post "/users" do
     user=User.create(
-      full_Name: params[:full_name],
+      full_Name: params[:full_Name],
       email: params[:email],
       password: params[:password],
-      password_Confirming: params[:password_confirming],
+      password_Confirming: params[:password_Confirming],
     )
+    review.to_json
   end
 
 end
