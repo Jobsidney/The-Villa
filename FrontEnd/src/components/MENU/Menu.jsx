@@ -1,11 +1,11 @@
 import React from 'react'
 import Button from '../SampleMenu/Button'
-import BreakFast from './Breakfast/BreakFast'
-import QuickDrinks from './cocktails/QuickDrinks'
-import Dessert from './Desserts/Dessert'
-import Lunch from './Lunch/Lunch'
+// import BreakFast from './Breakfast/BreakFast'
+// import QuickDrinks from './cocktails/QuickDrinks'
+// import Dessert from './Desserts/Dessert'
+// import Lunch from './Lunch/Lunch'
 import menu from './menu.css'
-import { BrowserRouter,Route,Routes,Link,Outlet} from "react-router-dom";
+import { Link,Outlet} from "react-router-dom";
 
 function Menu() {
  
