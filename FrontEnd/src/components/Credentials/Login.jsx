@@ -2,15 +2,15 @@ import React,{useState,useEffect} from 'react'
 import { Link } from 'react-router-dom'
 function Login() {
 
-const [users,setUser]=useState('');
 const [formData,setData] = useState({})
+const[data,setUser]=useState('');
 
-// useEffect(()=>{
-// fetch("http://localhost:3000/users")
-// .then(res=>res.json())
-// .then(data=>setUser(data));
-// },[])
-console.log(users);
+useEffect(()=>{
+  fetch('http://localhost:9292/users/logins')
+  .then(res=>res.json())
+  .then(data=>setUser(data))
+},[])
+
 
   function handleChange(event) {
     const name=event.target.name;
@@ -25,9 +25,10 @@ console.log(users);
 
 function handleSubmit(event){
     event.preventDefault();
-    const current=users.map(user=>user.email===formData.email ? user : false 
-    )
-    console.log(current);
+    data.find(item=>item.email===formData.email)?
+    alert('This user Exist!')
+    :console.log('Signup Successfully');
+
 
 }
 
@@ -35,8 +36,8 @@ function handleSubmit(event){
     <form id='log' onSubmit={handleSubmit}>
         <h2 className="heading">Villa</h2>
         
-            <input type="email" name="email" id="username-field" className="login-button" placeholder="Email" onChange={handleChange}></input>
-            <input type="password" name="password" id="password-field" className="login-button" placeholder="Password" onChange={handleChange}></input>
+            <input type="email" name="email" id="username-field" className="login-button" placeholder="Email" onChange={handleChange} required></input>
+            <input type="password" name="password" id="password-field" className="login-button" placeholder="Password" onChange={handleChange} required></input>
         
         <button type='submit' classNameName='log' id='logIn'>Login</button>
 
