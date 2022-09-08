@@ -25,9 +25,14 @@ useEffect(()=>{
 
 function handleSubmit(event){
     event.preventDefault();
-    data.find(item=>item.email===formData.email)?
-    alert('This user Exist!')
-    :console.log('Signup Successfully');
+    const item=data.find(item=>item.email===formData.email)
+    if (item && item.password===formData.password){
+        alert('Login Successfull !...')
+        event.target.reset() 
+    }else{
+      alert('Login Failure! Wrong email or password!')
+    };
+
 
 
 }
