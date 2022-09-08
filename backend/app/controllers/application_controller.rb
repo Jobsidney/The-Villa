@@ -30,6 +30,9 @@ class ApplicationController < Sinatra::Base
   get "/users/logins" do
     User.all.to_json(only: [:email, :password])
   end
+  # get "/users/signup" do
+  #   User.find_by(email: params[:email])
+  # end
 
   #creating new user
   post "/users" do
