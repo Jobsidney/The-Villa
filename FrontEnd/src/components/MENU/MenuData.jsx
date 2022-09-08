@@ -16,4 +16,4 @@ function MenuData() {
   )
 }
 
-export {MenuData,meals}
+export default MenuData;

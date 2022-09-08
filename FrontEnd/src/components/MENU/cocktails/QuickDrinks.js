@@ -1,11 +1,18 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import Cocktail from './Cocktail';
 
 
 
 
 function QuickDrinks() {
+  const [meals,setMeals]=useState('')
 
+  useEffect(()=>{
+      fetch('http://localhost:9292/foods')
+      .then(res=>res.json())
+      .then(data=>setMeals(data))
+  },[])
+  console.log(meals);
 
     const cocktails = [
         {
@@ -34,34 +41,7 @@ function QuickDrinks() {
           tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
         },
       ];
-      const wines = [
-        {
-          title: "Generali Meakins",
-          price: "$56",
-          tags: "AU | Bottle"
-        },
-        {
-          title: "Ka Quarter",
-          price: "$59",
-          tags: "AU | Bottle"
-        },
-        {
-          title: "La Vieillw Rose",
-          price: "$44",
-          tags: "FR | 750 ml"
-        },
-        {
-          title: "Rhino Pale Ale",
-          price: "$31",
-          tags: "CA | 750 ml"
-        },
-        {
-          title: "Irish Guinness",
-          price: "$26",
-          tags: "IE | 750 ml"
-        }
-      ];
-    
+      const wines = [...meals]
 
 
   return (
