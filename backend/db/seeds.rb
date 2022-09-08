@@ -1,48 +1,48 @@
 puts "🌱 Seeding spices..."
 
-wines = [{
-    description: 'Fresh seasonal apples sreusel Topping cinnamon ice cream',
-    title: 'Apple crisp',
-    price: '$9.00'
-},
-{
-    description: 'Tangy Custard with Graham Cracker crust. Wripped cream and lime zest',
-    title: 'Key Lime pie',
-    price: '$8.00'
-},
-{
-    description: 'Topped with caramel, chocolate curls and cocoa powder',
-    title: 'Newyork cheesecake ',
-    price: '$8.55'
-},
-{
-    description: 'Fresh mixed berries with brown sugar and charbord topped with Fresh Whipped cream',
-    title: 'Mixed Berries',
-    price: '$8.50'
-},
-{
-    description: 'Chocolate shells with a choice of a white, milk or dark chocolate ganache',
-    title: 'Chocolate Molten Lava Cake',
-    price: '$11.00'
-},
-{
-    description: 'Chocolate shells with a choice of a white, milk or dark chocolate ganache',
-    title: 'Chocolate',
-    price: '$10.05'
-}
-]
+# wines = [{
+#     description: 'Fresh seasonal apples sreusel Topping cinnamon ice cream',
+#     title: 'Apple crisp',
+#     price: '$9.00'
+# },
+# {
+#     description: 'Tangy Custard with Graham Cracker crust. Wripped cream and lime zest',
+#     title: 'Key Lime pie',
+#     price: '$8.00'
+# },
+# {
+#     description: 'Topped with caramel, chocolate curls and cocoa powder',
+#     title: 'Newyork cheesecake ',
+#     price: '$8.55'
+# },
+# {
+#     description: 'Fresh mixed berries with brown sugar and charbord topped with Fresh Whipped cream',
+#     title: 'Mixed Berries',
+#     price: '$8.50'
+# },
+# {
+#     description: 'Chocolate shells with a choice of a white, milk or dark chocolate ganache',
+#     title: 'Chocolate Molten Lava Cake',
+#     price: '$11.00'
+# },
+# {
+#     description: 'Chocolate shells with a choice of a white, milk or dark chocolate ganache',
+#     title: 'Chocolate',
+#     price: '$10.05'
+# }
+# ]
 
 
-wines.each do |wine|
-    Food.create(
-        meal_name: wine[:title],
-        description: wine[:description],
-        food_type: 4,
-        price: wine[:price],
-        image: ''
-    )
+# wines.each do |wine|
+#     Food.create(
+#         meal_name: wine[:title],
+#         description: wine[:description],
+#         food_type: 4,
+#         price: wine[:price],
+#         image: ''
+#     )
 
-end
+# end
 
 
 

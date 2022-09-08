@@ -7,6 +7,10 @@ task :server do
     puts "Migrations are pending. Make sure to run `rake db:migrate` first."
     return
   end
+desc "Start the server"
+  task :server do
+    exec "rerun -b 'rackup config.ru'"
+  end
 
   # rackup -p PORT will run on the port specified (9292 by default)
   ENV["PORT"] ||= "9292"
