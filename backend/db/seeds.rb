@@ -1,5 +1,7 @@
 puts "🌱 Seeding spices..."
 
+# User.all.order('id desc').limit(1).destroy_all
+
 # wines = [{
 #     description: 'Fresh seasonal apples sreusel Topping cinnamon ice cream',
 #     title: 'Apple crisp',

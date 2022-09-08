@@ -2,32 +2,36 @@ class ApplicationController < Sinatra::Base
   set :default_content_type, 'application/json'
   
   # Add your routes here
-  # get "/" do
-  #   { message: "Good luck with your proje!" }.to_json
-  # end
-
-
-  get "/users" do
-    users=User.all.to_json
-    users
+  get "/" do
+    { message: "WELCOME TO VILLA RESTAURANT" }.to_json
   end
 
+
+#REVIEWS
   get "/reviews" do
-    Review.all.to_json
+    Review.all.to_json(include: {user: {only: [:id,:full_Name ]}})
+  end
+  post "review" do
+    Review.create(
+      review: params[:review],
+      rating: params[:rating],
+      user_id: params[:user_id],
+      food_id: params[:food_id]
+    )
   end
 
+  #FOOD DATA
   get "/foods" do
       Food.all.to_json
   end
   
 
-
-
-  #users data API
-  get "/users" do
-    User.all.to_json
+  #USER DATA API
+  get "/users/logins" do
+    User.all.to_json(only: [:email, :password])
   end
 
+  #creating new user
   post "/users" do
     user=User.create(
       full_Name: params[:full_Name],
@@ -35,7 +39,7 @@ class ApplicationController < Sinatra::Base
       password: params[:password],
       password_Confirming: params[:password_Confirming],
     )
-    review.to_json
+    user.to_json
   end
 
 end
