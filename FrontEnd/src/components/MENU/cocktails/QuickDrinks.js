@@ -12,35 +12,9 @@ function QuickDrinks() {
       .then(res=>res.json())
       .then(data=>setMeals(data))
   },[])
-  console.log(meals);
 
-    const cocktails = [
-        {
-          title: 'Aperol Sprtiz',
-          price: '$20',
-          tags: 'Aperol | Villa Marchesi prosecco | soda | 30 ml',
-        },
-        {
-          title: "Dark 'N' Stormy",
-          price: '$16',
-          tags: 'Dark rum | Ginger beer | Slice of lime',
-        },
-        {
-          title: 'Daiquiri',
-          price: '$10',
-          tags: 'Rum | Citrus juice | Sugar',
-        },
-        {
-          title: 'Old Fashioned',
-          price: '$31',
-          tags: 'Bourbon | Brown sugar | Angostura Bitters',
-        },
-        {
-          title: 'Negroni',
-          price: '$26',
-          tags: 'Gin | Sweet Vermouth | Campari | Orange garnish',
-        },
-      ];
+
+    const cocktails = [...meals];
       const wines = [...meals]
 
 
@@ -49,14 +23,14 @@ function QuickDrinks() {
     <div className="wines">
         <h2>Wines</h2>
         <p id='text'>
-           {<Cocktail objects={wines}/>}
+           {<Cocktail objects={wines} type='5'/>}
         </p>
     </div>
     <div className='wines img'></div>
     <div className="wines">
         <h2>Cocktails</h2>
         <p id="text">
-            {<Cocktail objects={cocktails}/>}
+            {<Cocktail objects={cocktails} type='6'/>}
         </p>
         
     </div>
