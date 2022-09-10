@@ -25,15 +25,28 @@ function handleChange(event) {
 function handleAction(){
   setAction(!action)
 }
+function handleDeleteClick({id}) {
+
+}
 
 function handleSubmit(event){
-    event.preventDefault();
     const item=data.find(item=>item.email===formData.email)
     if (item && item.password===formData.password){
+      if(action){
         alert('Login Successfull !...')
         event.target.reset()
         navigate('/menu')
+      }
+      else{
+        fetch(`http://localhost:9292/users/${item.id}`, {
+          method: "DELETE",
+        })
+      alert(`User Account Deleted succesfully`)
+      event.target.reset()
+      navigate('/')
+      }
     }else{
+      event.preventDefault();
       alert('Login Failure! Wrong email or password!')
     };
 }
