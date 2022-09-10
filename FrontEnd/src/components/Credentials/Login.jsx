@@ -4,6 +4,7 @@ function Login() {
 
 const [formData,setData] = useState({})
 const[data,setUser]=useState('');
+const [action,setAction] = useState(true);
 const navigate=useNavigate();
 
 useEffect(()=>{
@@ -12,16 +13,18 @@ useEffect(()=>{
   .then(data=>setUser(data))
 },[])
 
+function handleChange(event) {
+  const name=event.target.name;
+  const value=event.target.value;
+  setData({
+    ...formData,
+    [name]: value,
+  })
 
-  function handleChange(event) {
-    const name=event.target.name;
-    const value=event.target.value;
-    setData({
-      ...formData,
-      [name]: value,
-    })
-
-  }
+}
+function handleAction(){
+  setAction(!action)
+}
 
 function handleSubmit(event){
     event.preventDefault();
@@ -36,13 +39,16 @@ function handleSubmit(event){
 }
 
   return (
-    <form id='log' onSubmit={handleSubmit}>
+    <div>
+       
+        <form id='log' onSubmit={handleSubmit}>
+        
         <h2 className="heading">Villa</h2>
         
             <input type="email" name="email" id="username-field" className="login-button" placeholder="Email" onChange={handleChange} required></input>
             <input type="password" name="password" id="password-field" className="login-button" placeholder="Password" onChange={handleChange} required></input>
         
-        <button type='submit' classNameName='log' id='logIn'>Login</button>
+        <button type='submit' classNameName='log' id='logIn'>{action?'Login' :'Delete'}</button>
 
         <h3 id="password"><a href ="##">forgot password?</a></h3>
         <div className="horizontal">
@@ -53,7 +59,9 @@ function handleSubmit(event){
             </div>
         </div>
         <h3 id="account">Don't have an account? <Link to="/signUp" id="sign">Sign up</Link></h3>
-    </form>
+        <h3 id="account">Do you want to {action ?'Delete':'Login'} Account? <Link to="" id="sign" onClick={handleAction}>{action?'Delete':'Login'}</Link></h3>
+      </form>
+    </div>
   )
 }
 
