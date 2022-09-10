@@ -28,12 +28,19 @@ class ApplicationController < Sinatra::Base
 
   #USER DATA API
   get "/users/logins" do
-    User.all.to_json(only: [:email, :password])
+    User.all.to_json(only: [:id, :email, :password])
   end
+
   # get "/users/signup" do
   #   User.find_by(email: params[:email])
   # end
+#deleting a user
 
+delete "/users/:id" do
+  user=User.find(params[:id])
+  user.destroy
+  user.to_json
+end
   #creating new user
   post "/users" do
     user=User.create(
