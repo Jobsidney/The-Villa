@@ -1,9 +1,10 @@
 
 import React, { useState, useEffect } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 function SignUp() {
 const [formData,setData] = useState({});
 const[data,setUser]=useState('');
+const navigate = useNavigate()
 useEffect(()=>{
   fetch('http://localhost:9292/users/logins')
   .then(res=>res.json())
@@ -32,6 +33,7 @@ useEffect(()=>{
       body: JSON.stringify(formData),
     })   
     event.target.reset()
+    navigate('/login')
     }
 
   }
