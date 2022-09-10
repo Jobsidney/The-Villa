@@ -1,9 +1,10 @@
 import React,{useState,useEffect} from 'react'
-import { Link } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 function Login() {
 
 const [formData,setData] = useState({})
 const[data,setUser]=useState('');
+const navigate=useNavigate();
 
 useEffect(()=>{
   fetch('http://localhost:9292/users/logins')
@@ -19,7 +20,6 @@ useEffect(()=>{
       ...formData,
       [name]: value,
     })
-    console.log(formData);
 
   }
 
@@ -28,7 +28,8 @@ function handleSubmit(event){
     const item=data.find(item=>item.email===formData.email)
     if (item && item.password===formData.password){
         alert('Login Successfull !...')
-        event.target.reset() 
+        event.target.reset()
+        navigate('/menu')
     }else{
       alert('Login Failure! Wrong email or password!')
     };

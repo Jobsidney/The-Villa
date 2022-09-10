@@ -4,13 +4,11 @@ import React, { useState, useEffect } from 'react';
 function SignUp() {
 const [formData,setData] = useState({});
 const[data,setUser]=useState('');
-let changer=0;
 useEffect(()=>{
   fetch('http://localhost:9292/users/logins')
   .then(res=>res.json())
   .then(data=>setUser(data))
 },[])
-console.log(data);
   function handleChange(event) {
     const name=event.target.name;
     const value=event.target.value;
