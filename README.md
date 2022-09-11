@@ -16,21 +16,30 @@ This is A fully functional web application that deals with providing hospitality
 - Secure login & Signup.
 - Fast loading & interaction
 
-## [InstallationInstructions]() 
+## [Installation-Instructions]() 
 ### requirements:
 - chrome browser/any other browser
 - any type of computer(phone of laptop)
 - Internet connection
 - Navigate to the git repository
-- clone the repo to local machine
+- Fork  the repo using the fork button on this repository
+- Git clone the forked repository to your local machine.
+- Then perform the following two steps to run the Application:
 #### BackEnd SetUP
-- Open the backend folder on A termina
+- Open the backend folder on A terminal
 - Then, run `bundle install` to install require gems
 - run  (`bundle exec rake server`) to run the backend
 #### FrontEnd SetUP
 - Navigate to the frontEnd folder and open it in the terminal
 - run (`npm start`) to run the applicationon the browser.
 - Done..! the site is up and running locally.
+##### On successful Running:
+You get the home page With navigation around the application
+<img src="/FrontEnd/public/images/1stPage.png">
+
+***
+Customers can Check the menu for more information of the meal they will prefer to take.
+<img src="/FrontEnd/public/images/menuPage.png">  
 
 ## Target to future improvement
 - Domain to deploy the application to the web.
@@ -42,18 +51,22 @@ This is A fully functional web application that deals with providing hospitality
 ```js
 import React,{useState,useEffect} from 'react'
 import { Link,useNavigate } from 'react-router-dom'
-function Login() {
 
+function Login() {
 const [formData,setData] = useState({})
 const[data,setUser]=useState('');
 const [action,setAction] = useState(true);
 const navigate=useNavigate();
 
+
 useEffect(()=>{
   fetch('http://localhost:9292/users/logins')
   .then(res=>res.json())
   .then(data=>setUser(data))
-},[])}
+},[])
+
+}
+
 ```
 
 #### CSS
@@ -77,7 +90,6 @@ end
 ```
 ## PROJECT AUTHOR
 - [Jobsidney](https://github.com/Jobsidney/)
-- [<img style="border: 1px solid white;" src="./assets/images/job.png">](https://github.com/Jobsidney/)
 ***
 
 ## license information.
