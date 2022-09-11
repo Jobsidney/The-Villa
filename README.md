@@ -39,7 +39,7 @@ This is A fully functional web application that deals with providing hospitality
 
 ### Program Sample
 #### React Code
-```React
+```js
 import React,{useState,useEffect} from 'react'
 import { Link,useNavigate } from 'react-router-dom'
 function Login() {
