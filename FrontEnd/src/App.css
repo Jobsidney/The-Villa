@@ -79,6 +79,25 @@ nav>ul>li>a:hover{
 button{
   cursor:pointer;
 }
+/* SIDE NAV BAR */
+.nav-menu{
+  width: 440px;
+  background-color:#ed5625;
+  left: 0;
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+
+}
+.nav-menu-items{
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
 /* HOME SECTION */
 .hero{
   background-image: url("../public/images/bg.png");
