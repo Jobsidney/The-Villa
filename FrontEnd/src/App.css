@@ -80,17 +80,37 @@ button{
   cursor:pointer;
 }
 /* SIDE NAV BAR */
-.nav-menu{
-  width: 440px;
-  background-color:#ed5625;
+.navBar2{
   left: 0;
-  position: fixed;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
+  color: black;
   justify-content: flex-start;
-
-
+}
+.navBar2>.menu-bars{
+  color: black;
+}
+.menu-bars{
+  margin-left: 2rem;
+  font-size: 2rem;
+  background-color: none;
+  color: white;
+}
+.nav-menu{
+  background-color:#ed5625;
+ width: 420px;
+ position: fixed;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ height: 100vh;
+ position: fixed;
+ left:-100%;
+ transition: 850ms;
+}
+.nav-menu.active{
+  left:0;
+  background-color:#ed5625;
+  /* transition: 350ms; */
+  
 }
 .nav-menu-items{
   display: flex;

@@ -11,7 +11,7 @@ import SmallNavBar from './components/navBar/SmallNavBar';
 function App() {
   return (
       <div className="App">
-        <NavBar/>
+        {/* <NavBar/> */}
         <SmallNavBar/>
         {/* <Routes>
           <Route path="/" element={<WholeFirstPage/>}/>
