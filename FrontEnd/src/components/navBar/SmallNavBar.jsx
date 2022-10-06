@@ -13,7 +13,7 @@ function SmallNavBar() {
     }
   return (
     <>
-      <div className="navBar2 nav-active">
+      <div className="navBar2 nav-active activate">
         <Link to="#" className='menu-bars'>
             <FaIcons.FaBars onClick={toggle}/>
         </Link>
@@ -21,7 +21,7 @@ function SmallNavBar() {
     <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
         <ul className="nav-menu-items">
            <li className="navbar-toggle">
-                <Link to="#" className='menu-bars'>
+                <Link to="#" className='menu-bars' onClick={toggle}>
                     <AiIcons.AiOutlineClose/>
                 </Link>
             </li>
@@ -29,7 +29,7 @@ function SmallNavBar() {
                 SideBarData.map((item,index)=>{
                     return(
                         <li key={index} className={item.cName}>
-                            <Link to={item.path}>
+                            <Link to={item.path} onClick={toggle}>
                                 {item.icon}
                                 <span>{item.Title}</span>
                             </Link>

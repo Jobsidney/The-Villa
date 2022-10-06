@@ -83,10 +83,12 @@ button{
 .navBar2{
   left: 0;
   color: black;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
+  
 }
 .navBar2>.menu-bars{
-  color: black;
+  color:white;
+  position:fixed;
 }
 .menu-bars{
   margin-left: 2rem;
@@ -97,7 +99,7 @@ button{
 .nav-menu{
   background-color:#ed5625;
  width: 420px;
- position: fixed;
+ /* position: fixed; */
  display: flex;
  justify-content: center;
  align-items: flex-start;
@@ -108,14 +110,40 @@ button{
 }
 .nav-menu.active{
   left:0;
-  background-color:#ed5625;
-  /* transition: 350ms; */
+  background-color:#e8501d;
+  transition: 350ms;
+
+}
+.activate{
+  display:none;
+}
+
+.nav-text{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 60px;
+  margin: 10px;
+  font-size: 20px;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 4px;
+  /* text-align: center; */
   
+
+}
+.nav-text:hover{
+  background-color: #f3e874ff;
+  color: black;
 }
 .nav-menu-items{
   display: flex;
   flex-direction: column;
   color: white;
+  width: 95%;
 }
 
 /* HOME SECTION */
@@ -488,11 +516,7 @@ button{
     to {opacity: 1}
   }
   
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
-  }
-  
+
 
 /* FOOTER SECTION */
 
@@ -552,6 +576,7 @@ footer{
 .socials>p{
     font-weight: 900;
 }
+/* .. */
 .media{
     display: flex;
     justify-content: space-around;
@@ -563,3 +588,55 @@ svg:hover, i:hover{
     color: #ed5625;
 }
 
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 500px) {
+    .text {
+      font-size: 11px
+    }
+    .deactivate{
+      display: none;
+    }
+    .activate{
+      display: flex;
+    }
+    .nav-menu{
+      width: 280px;
+      height: 100vh;
+    }
+  }
+  
+
+
+        /* On medium screens, decrease text size */
+        @media only screen and (min-width: 501px) {
+          .text {
+            font-size: 11px
+          }
+          .deactivate{
+            display: none;
+          }
+          .activate{
+            display: flex;
+          }
+          .nav-menu{
+            min-width: 280px;
+            height: 100vh;
+          }
+        }
+
+        @media only screen and (min-width: 800px) {
+          .text {
+            font-size: 11px
+          }
+          .deactivate{
+            display: flex;
+            flex-direction: row;
+          }
+          .activate{
+            display: none;
+          }
+          .nav-menu{
+            min-width: 280px;
+            height: 100vh;
+          }
+        }

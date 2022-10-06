@@ -4,7 +4,7 @@ import Back1Svg from './Back1Svg'
 import {Link } from 'react-router-dom'
 function NavBar({classN}) {
   return (
-      <nav>
+      <nav className='deactivate'>
         <label  className="logo">
           <Back1Svg/>
         </label>

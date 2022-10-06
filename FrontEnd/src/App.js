@@ -11,16 +11,16 @@ import SmallNavBar from './components/navBar/SmallNavBar';
 function App() {
   return (
       <div className="App">
-        {/* <NavBar/> */}
+        <NavBar/>
         <SmallNavBar/>
-        {/* <Routes>
+        <Routes>
           <Route path="/" element={<WholeFirstPage/>}/>
           <Route path="#about" element={<Abouts/>}/>
-        </Routes> */}
+        </Routes>
 
 
-        {/* <Reservation/> */}
-        {/* <Menu/> */}
+        <Reservation/>
+        <Menu/>
       
       </div>
 
