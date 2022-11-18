@@ -19,8 +19,8 @@ function App() {
         </Routes>
 
 
-        <Reservation/>
-        <Menu/>
+        {/* <Reservation/>
+        <Menu/> */}
       
       </div>
 
